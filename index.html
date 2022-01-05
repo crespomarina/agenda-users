@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>user listing page</title>
+</head>
+<body>
+  <!-- Area de busqueda -->
+  <div class="container">
+    <div class="search-area">
+      <input class="keyword-search" type="text" placeholder="Search Keywords">
+    </div>
+    <div class="showing-el">
+      Showing 10 of 100 users
+    </div>
+  </div>
+  <br><br>
+
+  <div class="wrap-sorting">
+    <div class="sort-by">
+      <span>Sort by:</span>
+    </div>
+    <div class="asc-desc">
+      <select id="select-order">
+        <option value="asc">Asc</option>
+        <option value="desc">Desc</option>
+      </select>
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Display de usuarios 
+  estos van a ser llamados desde la API -->
+
+  <div class="users-wrapper">
+    <div class="user-container" id="user-0"></div>
+    <div class="user-container" id="user-1"></div>
+    <div class="user-container" id="user-2"></div>
+    <div class="user-container" id="user-3"></div>
+    <div class="user-container" id="user-4"></div>
+    <div class="user-container" id="user-5"></div>
+    <div class="user-container" id="user-6"></div>
+    <div class="user-container" id="user-7"></div>
+    <div class="user-container" id="user-8"></div>
+    <div class="user-container" id="user-9"></div>
+  </div>
+
+  <div class="users-filtered"></div>
+  
+</div>
+    <br><br> 
+
+    <!-- Botones de paginacion -->
+    <div class="pagination-buttons">
+      <button id="btn-prev" type="button" class="page-btn prev-page">prev</button>
+      <button id="btn0" type="button" class="page-btn numbtn">1</button>
+      <button id="btn1" type="button" class="page-btn numbtn">2</button>
+      <button id="btn2" type="button" class="page-btn numbtn">3</button>
+      <button id="btn3" type="button" class="page-btn numbtn">4</button>
+      <button id="btn4" type="button" class="page-btn numbtn">5</button>
+      <button id="btn-next" type="button" class="page-btn next-page">next</button>
+    </div>
+  </div>
+
+  <script src="users.js"></script>
+  <script src="app.js"></script>  
+</body>
+</html>

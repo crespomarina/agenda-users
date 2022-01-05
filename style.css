@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500&display=swap');
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.search-area {
+  float: left;
+}
+
+input {
+  border-radius: 4px;
+  border: solid 2px;
+  border-color: yellow;
+  text-align: center;
+}
+
+input:focus {
+  background-color: lightgoldenrodyellow;
+}
+
+.showing-el {
+  padding-left: 20px;
+  float: left;
+}
+
+.sort-by {
+  float: left;
+}
+
+.select-order {
+  padding: 20px;
+  float: left;
+} 
+
+.body {
+  display: flex;
+  background-color: lightblue;
+  flex-direction: row;
+} 
+
+.users-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.users-filtered {
+  padding: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+  
+.user-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width: 300px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.image {
+  width: 200px;
+  margin: 20px;
+}
+      
+.user {
+  background-color: lightgrey;
+  padding: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: medium;
+}
+
+.user-location {
+  font-size: x-small;
+}
+
+.user-login {
+  font-size: small;
+}
+
+.clock-svg {
+  height: .875em;
+  padding-right: 5px;
+}
+
+/* Botones de navegacion */
+.pagination-buttons {
+  align-items: center;
+  padding: 2px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.page-btn {
+  background: #ddd;
+  color: #2c303a; 
+  height: 35px;
+  border-radius: 2px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 2px;
+}
+
+.page-btn:not([class$="-page"]) {
+  width: 35px;
+}
+
+.page-btn.active {
+  background-color: yellow;
+  color: black;
+}
+
+.prev-page.active {
+  width: 60px;
+}
+
+.next-page.active {
+  width: 60px;
+}
